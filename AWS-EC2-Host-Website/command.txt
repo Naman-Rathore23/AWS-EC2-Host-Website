@@ -1,0 +1,15 @@
+# Project 2: Host Static Website/Game on EC2
+
+# Install Apache
+sudo yum update -y
+sudo yum install httpd -y
+
+# Start Apache
+sudo systemctl start httpd
+sudo systemctl enable httpd
+
+# Copy game files
+sudo cp index.html /var/www/html/
+sudo cp style.css /var/www/html/
+sudo cp script.js /var/www/html/
+
